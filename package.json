@@ -1,0 +1,23 @@
+{
+  "name": "tea",
+  "version": "1.0.0",
+  "description": "tea and other drinks",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gideonrynn/tea.git"
+  },
+  "keywords": [
+    "tea"
+  ],
+  "author": "sarah dillard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gideonrynn/tea/issues"
+  },
+  "homepage": "https://github.com/gideonrynn/tea#readme"
+}
