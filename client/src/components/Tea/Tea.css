@@ -1,0 +1,13 @@
+.plusSign {
+    cursor: pointer;
+}
+
+fieldset {
+    width: 300px;
+    padding: 10px;
+}
+
+/* for all children */
+fieldset * {
+    margin: 5px 0;
+}

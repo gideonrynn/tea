@@ -14,6 +14,16 @@
   height: 40vh;
 }
 
+.App-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas:
+      "header header header"
+      ;
+}
+
 .App-header {
   
   /* background-size: 100%; */
@@ -27,3 +37,9 @@
   /* filter: blur(5px); */
 }
 
+.home {
+  /* grid-area: chart;
+  border-style: dashed;
+  border-color: orange;
+  border-left: 2px solid grey; */
+}

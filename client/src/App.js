@@ -1,14 +1,16 @@
 import './App.css';
+import Tea from './components/Tea/Tea'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="home">
-          <h1>Tea</h1>
-        </div>
-        
-      </header>
+      <div className="App-container">
+        <header className="App-header">
+          <div className="home">
+            <Tea/>
+          </div>
+        </header>
+      </div>
     </div>
   );
 }
