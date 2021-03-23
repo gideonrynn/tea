@@ -1,2 +1,2 @@
-# tea
-Tea usage and other important drink stats.
+# The Moment For Tea
+Tea, the whole tea, and nothing but the tea

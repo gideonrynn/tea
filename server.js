@@ -10,6 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
 
+const db = require("./models");
+
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 }
@@ -18,6 +20,9 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.listen(PORT, () => 
-    console.log(`🌎 ==> API server now on port ${PORT}!`)
-);
+db.sequelize.sync({force:false})
+    .then(() => {
+        app.listen(PORT, () => 
+            console.log(`API server now on ${PORT}!`))
+            
+});
