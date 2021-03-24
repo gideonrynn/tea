@@ -20,30 +20,29 @@ const Tea = () => {
         console.log("This has been clicked!")
         console.log(event);
 
-        if(newTea) {
-
+        if(newTea.name !== null && newTea.name !== 0 && newTea.name !== "") {
+            TeaAPI.addTea({
+                name: newTea.name,
+                // lastBrewed: newTea.lastBrewed,
+                type: newTea.type,
+                packetType: newTea.packettype,
+                timeOfDay: newTea.timeofday,
+                rank: newTea.rank,
+                description: newTea.description,
+                background: newTea.background
+            }).then(
+                setNewTea({
+                    name: "",
+                    type: "",
+                    packettype: "",
+                    timeofday: "",
+                    rank: "",
+                    description: "",
+                    background: ""
+                })
+            )
         }
 
-        TeaAPI.addTea({
-            name: newTea.name,
-            // lastBrewed: newTea.lastBrewed,
-            type: newTea.type,
-            packetType: newTea.packettype,
-            timeOfDay: newTea.timeofday,
-            rank: newTea.rank,
-            description: newTea.description,
-            background: newTea.background
-        }).then(
-            setNewTea({
-                name: "",
-                type: "",
-                packettype: "",
-                timeofday: "",
-                rank: "",
-                description: "",
-                background: ""
-            })
-        )
     }
 
 
