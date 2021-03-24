@@ -12,15 +12,19 @@ router.get("/tea", (req, res) => {
 router.post("/tea/new", ({body}, res) => {
 
   console.log(body)
-    
   db.Tea.create(body)
-    .then(tea => {
-      res.json(tea);
+    .then((tea) => {
+      db.Saga.create({
+        newUpdate: "new tea added",
+        TeaId: tea.dataValues.id 
+      })
     })
-    .catch(err => {
-      res.status(404).json(err);
-    });
-
+      .then(tea => {
+        res.json(tea);
+      })
+      .catch(err => {
+        res.status(404).json(err);
+      });
 });
 
 module.exports = router;

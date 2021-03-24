@@ -2,7 +2,10 @@ const { Sequelize } = require(".");
 
 module.exports = function(sequelize, DataTypes) {
 
-    const History = sequelize.define('History', {
+    const Saga = sequelize.define('Saga', {
+        newUpdate: {
+            type: DataTypes.TEXT,
+        },
         createdAt: {
             type: DataTypes.DATEONLY,
             allowNull: true,  
@@ -13,14 +16,12 @@ module.exports = function(sequelize, DataTypes) {
         }
     })
 
-    History.associate = (models) => {
-        History.belongsTo(models.Tea, {
-            // pascal case for foreign key to get around duplicate column sequelize error
-            foreignKey: "TeaId",
-            as: "tea",
-          });
+    Saga.associate = (models) => {
+        Saga.belongsTo(models.Tea, {
+            foreignKey: 'TeaId'
+        });
       };
 
-    return History;
+    return Saga;
 }
 

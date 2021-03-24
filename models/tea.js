@@ -2,7 +2,7 @@ const { Sequelize } = require(".");
 
 module.exports = function(sequelize, DataTypes) {
 
-    const Tea = sequelize.define('Tea', {
+    const Tea = sequelize.define("Tea", {
         name: {
             type: DataTypes.STRING,
         },
@@ -24,6 +24,9 @@ module.exports = function(sequelize, DataTypes) {
         description: {
             type: DataTypes.TEXT
         },
+        background: {
+            type: DataTypes.TEXT
+        },
         createdAt: {
             type: DataTypes.DATEONLY,
             allowNull: true,  
@@ -35,7 +38,7 @@ module.exports = function(sequelize, DataTypes) {
     })
 
         Tea.associate = (models) => {
-            Tea.hasMany(models.History, { as: 'history'});
+            Tea.hasMany(models.Saga);
         }
 
         return Tea;

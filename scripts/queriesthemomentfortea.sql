@@ -1,3 +1,3 @@
 use themomentfortea;
 
-SELECT * FROM themomentfortea.tea;
+SELECT * FROM themomentfortea.teas;
