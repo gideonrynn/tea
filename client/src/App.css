@@ -15,6 +15,7 @@
 }
 
 .App-container {
+  margin: 0;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(1, 1fr);
@@ -37,9 +38,9 @@
   /* filter: blur(5px); */
 }
 
-.home {
-  /* grid-area: chart;
+/* .home {
+  grid-area: chart;
   border-style: dashed;
   border-color: orange;
-  border-left: 2px solid grey; */
-}
+  border-left: 2px solid grey;
+} */

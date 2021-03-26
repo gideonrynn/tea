@@ -1,5 +1,6 @@
 import './App.css';
-import Tea from './components/Tea/Tea'
+// import AddNewTea from './components/AddNewTea/AddNewTea';
+import ViewTea from './components/ViewTea/ViewTea'
 
 function App() {
   return (
@@ -7,7 +8,8 @@ function App() {
       <div className="App-container">
         <header className="App-header">
           <div className="home">
-            <Tea/>
+            <ViewTea/>
+            {/* <AddNewTea/> */}
           </div>
         </header>
       </div>

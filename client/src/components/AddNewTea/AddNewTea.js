@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
-import "./Tea.css"
+// import { FaPlus, FaMinus } from "react-icons/fa";
+import "./AddNewTea.css"
 import TeaAPI from "../../utils/TeaAPI"
 
-const Tea = () => {
+const AddNewTea = () => {
 
     const [newTea, setNewTea] = useState({});
 
@@ -17,7 +17,7 @@ const Tea = () => {
 
     const submitForm = (event) => {
         event.preventDefault()
-        console.log("This has been clicked!")
+        console.log("Submit has been clicked!")
         console.log(event);
 
         if(newTea.name !== null && newTea.name !== 0 && newTea.name !== "") {
@@ -112,4 +112,4 @@ const Tea = () => {
     )
 }
 
-export default Tea;
+export default AddNewTea;

@@ -1,0 +1,48 @@
+
+.tea-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+        "header header header"
+        "card card card";
+    color: black;
+}
+
+.tea-container-header {
+    /* color: #FFFFFF; */
+    margin-top: 60px; 
+    grid-area: header;
+    color: #f9f1f1;
+    align-items:stretch;
+}
+
+.tea-section {
+    display: flex;
+    grid-area: card;
+    justify-content: stretch;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background: #FFFFFF;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 250px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card:nth-child(1) {
+    grid-row-end: span 3;
+  }
+
+.card-header {
+    text-align: left;
+    font-size: large;
+    font-style: italic;
+}
