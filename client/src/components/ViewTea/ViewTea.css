@@ -51,7 +51,13 @@
     font-style: italic;
 }
 
-/* .card:nth-child(1) {
-    grid-row-end: span 3;
-  } */
+.card:hover {
+    /* color: red; */
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.05, 1.05);
+}
+
+/* .card:hover::after {
+    opacity: 1;
+} */
 

@@ -33,9 +33,9 @@ const ViewTea = () => {
                             className="card"
                             key={tea.id}
                             style={
-                                {borderColor: tea.type === 'herbal' ? 'beige'
+                                {borderColor: tea.type === 'herbal' ? 'purple'
                                 : tea.type === 'caffeine free' ? 'yellow'
-                                : tea.type === 'black' ? 'orange'
+                                : tea.type === 'black' ? 'blue'
                                 : tea.type === 'green' ? 'green'
                                 : tea.type === 'white' ? 'white'
                                 : tea.type === 'rooibush' ? 'red'
