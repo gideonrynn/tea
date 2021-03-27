@@ -1,5 +1,5 @@
 import './App.css';
-// import AddNewTea from './components/AddNewTea/AddNewTea';
+import AddNewTea from './components/AddNewTea/AddNewTea';
 import ViewTea from './components/ViewTea/ViewTea'
 
 function App() {
@@ -7,11 +7,15 @@ function App() {
     <div className="App">
       <div className="App-container">
         <header className="App-header">
-          <div className="home">
-            <ViewTea/>
-            {/* <AddNewTea/> */}
+          {/* <h1>This is a test</h1> */}
+          <div>
+               
           </div>
         </header>
+        <div className="home">
+          <AddNewTea/>
+          <ViewTea/>
+        </div>
       </div>
     </div>
   );

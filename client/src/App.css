@@ -6,8 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: inear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  #282c34;
+  /* justify-content: center; */
+  background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  #282c34;
   color: white;
   opacity: 1;
   width: 40vh;
@@ -15,32 +15,12 @@
 }
 
 .App-container {
-  margin: 0;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(40px, auto);
-    grid-template-areas:
-      "header header header"
-      ;
-}
-
-.App-header {
-  
-  /* background-size: 100%; */
   min-height: 100vh;
   /* height: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
+  /* justify-content: center; */
   /* filter: blur(5px); */
 }
 
-/* .home {
-  grid-area: chart;
-  border-style: dashed;
-  border-color: orange;
-  border-left: 2px solid grey;
-} */

@@ -47,7 +47,7 @@ const AddNewTea = () => {
 
 
     return (
-        <div>
+        <div className="new-tea-container">
             {/* <h1>Tea</h1> */}
             {/* <div>
                 <FaPlus 

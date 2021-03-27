@@ -1,28 +1,35 @@
 
 .tea-container {
     height: 100vh;
-    width: 100vw;
+    width: 80vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(20px, auto);
+    grid-template-rows: fit-content(1em);
     grid-template-areas:
         "header header header"
         "card card card";
     color: black;
+    align-items: start;
+    margin-left: 15px;
 }
 
 .tea-container-header {
-    /* color: #FFFFFF; */
-    margin-top: 60px; 
+    margin-top: 60px;
+    margin-bottom: 0px;
+    
+    padding: 0px;
     grid-area: header;
     color: #f9f1f1;
-    align-items:stretch;
+    height: 60px;
+
 }
 
 .tea-section {
-    display: flex;
     grid-area: card;
-    justify-content: stretch;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .card {
@@ -37,12 +44,13 @@
     overflow: hidden;
 }
 
-.card:nth-child(1) {
-    grid-row-end: span 3;
-  }
-
 .card-header {
     text-align: left;
     font-size: large;
     font-style: italic;
 }
+
+/* .card:nth-child(1) {
+    grid-row-end: span 3;
+  } */
+

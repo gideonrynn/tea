@@ -22,7 +22,10 @@ const ViewTea = () => {
     return (
         <>
             <div className="tea-container">
-                <h2 className="tea-container-header">View Tea</h2>
+
+                <div className="tea-container-header">
+                    <h2 >View Tea</h2>
+                </div>
 
                 <div className="tea-section">
                     {allTea.map(tea => (
