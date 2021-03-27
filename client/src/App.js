@@ -13,6 +13,8 @@ function App() {
           </div>
         </header>
         <div className="home">
+          <h1>Tea</h1>
+
           <AddNewTea/>
           <ViewTea/>
         </div>

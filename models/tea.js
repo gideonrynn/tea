@@ -21,11 +21,20 @@ module.exports = function(sequelize, DataTypes) {
         packetType: {
             type: DataTypes.STRING
         },
-        description: {
+        descriptionShort: {
+            type: DataTypes.TEXT
+        },
+        descriptionFull: {
             type: DataTypes.TEXT
         },
         background: {
             type: DataTypes.TEXT
+        },
+        provider: {
+            type: DataTypes.STRING
+        },
+        website: {
+            type: DataTypes.STRING
         },
         createdAt: {
             type: DataTypes.DATEONLY,

@@ -31,14 +31,23 @@ const ViewTea = () => {
                     {allTea.map(tea => (
                         <div 
                             className="card"
-                            key={tea.id}>
+                            key={tea.id}
+                            style={
+                                {borderColor: tea.type === 'herbal' ? 'beige'
+                                : tea.type === 'caffeine free' ? 'yellow'
+                                : tea.type === 'black' ? 'orange'
+                                : tea.type === 'green' ? 'green'
+                                : tea.type === 'white' ? 'white'
+                                : tea.type === 'rooibush' ? 'red'
+                                : 'white'}}>
                             <div className="card-header">
                                 {tea.name}
                             </div>
                             <br/>
                             <p>{tea.type}</p>
                             <p>{tea.packettype}</p>
-                            <p>{tea.description}</p>
+                            <p>{tea.descriptionShort}</p>
+                            <p>{tea.descriptionFull}</p>
                             <p>{tea.lastBrewed}</p>
                         </div>
                     ))}

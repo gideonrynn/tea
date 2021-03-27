@@ -42,6 +42,7 @@
     height: 250px;
     text-align: left;
     overflow: hidden;
+    border-left: 8px solid black;
 }
 
 .card-header {
