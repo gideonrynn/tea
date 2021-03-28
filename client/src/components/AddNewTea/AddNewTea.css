@@ -7,7 +7,7 @@
 }
 
 fieldset {
-  width: 525px;
+  width: 500px;
   padding: 10px;
 }
 
@@ -17,7 +17,7 @@ fieldset * {
 }
 
 label {
-  width: 140px;
+  width: 125px;
   text-align: right;
   display: inline-block;
 }

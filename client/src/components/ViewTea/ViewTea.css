@@ -1,12 +1,13 @@
 
 .tea-container {
-    height: 100vh;
+    height: 100%;
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: fit-content(1em);
     grid-template-areas:
         "header header header"
+        "sort sort sort"
         "card card card";
     color: black;
     align-items: start;
@@ -16,12 +17,39 @@
 .tea-container-header {
     margin-top: 60px;
     margin-bottom: 0px;
-    
     padding: 0px;
     grid-area: header;
     color: #f9f1f1;
     height: 60px;
 
+}
+
+.tea-table-sort {
+    grid-area: sort;
+    color: #f9f1f1;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    table-layout: fixed;
+    width: 70vw;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+    width: 50px;
+    margin: 0px;
+}
+
+.tea-image {
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .tea-section {
@@ -32,11 +60,12 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+
 .card {
     border-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background: #FFFFFF;
-    padding: 20px;
+    padding-top: 0px;
     margin: 20px;
     width: 200px;
     height: 250px;
@@ -49,12 +78,16 @@
     text-align: left;
     font-size: large;
     font-style: italic;
+    padding: 15px 10px;
 }
 
 .card:hover {
     /* color: red; */
-    -webkit-transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1, 1);
     transform: scale(1.05, 1.05);
+}
+.card-content {
+    padding-left: 10px;
 }
 
 /* .card:hover::after {
